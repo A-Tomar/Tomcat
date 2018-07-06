@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     run: tomcat
-  name: my-tomcat
+  name: tomcat
   namespace: default
 spec:
   replicas: 2
@@ -23,4 +23,4 @@ spec:
       containers:
       - image: tomcat
         imagePullPolicy: Always
-        name: my-tomcat
+        name: tomcat
